@@ -58,7 +58,7 @@ header {
 
 
 .hero-banner {
-    background-image: linear-gradient(rgb(46 0 72), rgb(0 0 0 / 85%)), url(https://st4.depositphotos.com/3268541/19685/v/450/depositphotos_196850756-stock-illustration-study-vector-blue-horizontal-illustration.jpg);
+    background-image: linear-gradient(rgb(15 3 127), rgb(64 5 36 / 82%)), url(https://www.shutterstock.com/image-photo/lease-rental-car-sell-buy-600nw-2338321153.jpg);
         background-position: center center !important;
         /* https://img.freepik.com/premium-photo/white-paper-with-white-background-that-says-rectangle_1278706-20508.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1726790400&semt=ais_hybrid */
     background-repeat: no-repeat !important;
@@ -97,7 +97,7 @@ header {
     margin: 0;
     font-size: 2.2rem;
     line-height: 1.1;
-    color: rgb(225 186 0);
+    color: rgb(134 251 255);
 }
 
 .hero-text p {
@@ -320,7 +320,7 @@ tbody tr:hover {
     }
 
     .hero-banner {
-    background-image: url(https://media.istockphoto.com/id/1401295466/vector/halftone-spotted-background.jpg?s=612x612&w=0&k=20&c=ql7PRJ1ffHk-Zkj4cDeePpLzmqAPzgIVtfBkCsoqK2Q=);
+    background-image: linear-gradient(rgb(15 3 127), rgb(64 5 36 / 82%)), url(https://www.shutterstock.com/image-photo/lease-rental-car-sell-buy-600nw-2338321153.jpg);
     background-position: center center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -363,26 +363,20 @@ tbody tr:hover {
     padding: 20px;
     border: 1px solid #888;
     width: 90%; 
-    max-width: 450px; 
+    max-width: 800px; 
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
     transform: translateY(-50px); 
     margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
 }
 
-
-.modal-content-last-date {
-    background-color: #fefefe;
-    margin: 0px auto; /* Centered */
-    padding: 20px;
-    width: 90%; 
-    max-width: 600px; 
-    position: relative;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
 
 
 .modal-content.show {
@@ -411,6 +405,7 @@ tbody tr:hover {
 .modal-content form {
     display: flex;
     flex-direction: column;
+    width: 370px!important;
 }
 
 .modal-content label {
@@ -621,7 +616,7 @@ div.nav-wrap{
 }
 
 .join-donner{
-    background-color: rgb(83 0 169);
+    background-color: rgb(2 67 128);
     border-radius: 10px!important;
     color: white !important;
 }
@@ -829,20 +824,19 @@ footer p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 15px;
     padding: 0px 47px;
     position: relative;
     bottom: 100px;
+    max-width: 1000px;
+    margin: 0px auto;
   }
   
   .course-card {
-    width: calc(22% - 15px); /* Adjusted for 4 cards in a row */
+    width: 300px; /* Adjusted for 4 cards in a row */
     background: #ffffff;
     border-radius: 8px;
     overflow: hidden;
     text-align: center;
-    padding: 15px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
    
   }
   
@@ -852,52 +846,76 @@ footer p {
     border-radius: 5px;
   }
   
-  .course-card h3 {
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Main product container */
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+ 
+  
+  .product-image {
+    width:400px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .product-details {
+    font-size: 16px;
+  }
+  
+  .product-details li {
+    margin-bottom: 8px;
+  }
+  
+  /* Right side: pricing and rent button */
+  .right-side {
+    flex: 0 0 40%;
+    padding-left: 20px;
+  }
+  
+  .right-side p {
     font-size: 18px;
-    margin: 10px 0;
+    margin-bottom: 12px;
   }
   
-  .course-card p {
-    font-size: 14px;
-    color: #666;
-    margin: 10px 0;
-  }
-  
-  .course-card button {
-    padding: 10px 15px;
-    background: #007bff;
+  .rent-now-btn {
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: purple;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 14px;
+    transition: background-color 0.3s ease;
   }
   
-  .course-card button:hover {
-    background: #0056b3;
+  .rent-now-btn:hover {
+    background-color: darkviolet;
   }
-  
-  /* Ensure full container width */
-  .course-container {
-    max-width: 100%;
-  }
-  
-  /* Responsive Design */
-  @media screen and (max-width: 992px) {
-    .course-card {
-      width: calc(30.33% - 15px); /* 3 cards per row */
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
-    .course-card {
-      width: calc(50% - 15px); /* 2 cards per row */
-    }
-  }
-  
-  @media screen and (max-width: 480px) {
-    .course-card {
-      width: 100%; /* 1 card per row */
-    }
-  }
-  
